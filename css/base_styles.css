@@ -1,0 +1,176 @@
+:root {
+    --primary-color: #5d6d84; /* Soft Blue-Grey (for headings/accents) */
+    --secondary-color: #f7f7f7; /* Near-White background */
+    --text-color: #333333; /* Main text color */
+    --subtle-text-color: #6c757d; /* Lighter text for context */
+    --accent-color: #2ecc71; /* Green (for CTAs/buttons) */
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* ----------------------------------- */
+/* 1. Base Reset and Typography Setup  */
+/* ----------------------------------- */
+
+/* Box model reset for predictability */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Base Body Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Assumes Inter is linked in HTML */
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #ffffff; /* Default background */
+    padding: 1rem;
+}
+
+/* Headings (H1 - H6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.5rem 0; /* Consistent vertical rhythm */
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; }
+h2 { font-size: 2rem; font-weight: 600; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.5rem; }
+h3 { font-size: 1.5rem; font-weight: 600; }
+h4 { font-size: 1.25rem; font-weight: 500; }
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* ----------------------------------- */
+/* 2. Links and Lists                  */
+/* ----------------------------------- */
+
+/* Standard Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed), border-color var(--transition-speed);
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* If chapter is available make the read online in the toc green */
+.toc .available .status-indicator {
+    color: #28a745; /* Green for "Go/Available" */
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+/* Lists */
+ul, ol {
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* ----------------------------------- */
+/* 3. Buttons and Interactive Elements */
+/* ----------------------------------- */
+
+button, .button-style {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none; /* For elements using button styles */
+    transition: background-color var(--transition-speed), transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, .button-style:hover {
+    background-color: #27ae60;
+    transform: translateY(-1px);
+}
+
+/* ----------------------------------- */
+/* 4. Forms and Inputs                 */
+/* ----------------------------------- */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(93, 109, 132, 0.2); /* Subtle focus ring */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: var(--subtle-text-color);
+    text-align: left;
+}
+
+/*-----------------------------*/
+/* Call to Action Button        */
+/*------------------------------*/
+
+/* * 5. CALL TO ACTION (CTA) BUTTON 
+         */
+.cta-button {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 0.75rem 2rem;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+}
+
+.cta-button:hover {
+       background-color: #27ae60; /* Slightly darker green */
+       transform: translateY(-2px); /* Subtle lift effect */
+       box-shadow: 0 6px 20px rgba(46, 204, 113, 0.6);
+}
+
+/* ----------------------------------- */
+/* 6. Images and Media                 */
+/* ----------------------------------- */
+
+img {
+    max-width: 50%; /* Image scales down if container is smaller than its original width */
+    height: auto;    /* Crucial: Maintains aspect ratio when scaling down */
+    display: block;  /* Treats the image as a block element */
+    border-radius: var(--border-radius); /* Inherit soft corners from theme */
+    margin: 1rem auto; /* Centers the image if it's smaller than the container and adds vertical spacing */
+}
+
