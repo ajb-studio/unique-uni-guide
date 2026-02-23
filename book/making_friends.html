@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.20">
+<title>Making Friends</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e465c3ad7c74068b06efdce7500cf19"}'>
+</script>
+<!-- End Cloudflare Web Analytics -->
+</head>
+<body class="article">
+<div id="header">
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_making_friends">Making Friends</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Jack: I&#8217;ve been at university for about three months now. Everyone seems to have a tight-knit friend group, except for me. They&#8217;re going out and having fun, I feel like I&#8217;m missing out.</p>
+</div>
+<div class="paragraph">
+<p>Olivia: I had a lot of friends at school. Now I have ZERO friends and social life in uni. I spend most of my free time isolated in my room.</p>
+</div>
+<div class="paragraph">
+<p>Benjamin: I really want to have a fulfilling university experience, but here I am in the second year without a single friend.</p>
+</div>
+<div class="paragraph">
+<p>Paige: I&#8217;m sick of feeling lonely all the time. Why are people on my course so cliquey?</p>
+</div>
+<div class="paragraph">
+<p>Matthew: I feel very lonely. I&#8217;ve talked with some people on my course, but the conversations don&#8217;t really lead anywhere. How can I make friends with the people on my course?</p>
+</div>
+<div class="paragraph">
+<p>Brooke: I feel isolated at university. I&#8217;m not sure how to start a conversation or what to say. Maybe that&#8217;s why I haven&#8217;t made any friends yet?</p>
+</div>
+<div class="paragraph">
+<p>Jayden: The friends I made at university started leaving me out for no apparent reason. They do activities together in the weekend without inviting me. I&#8217;m worried about what made them dislike me.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Students commenting on feeling lonely at University
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Emma: I&#8217;ve joined a few clubs / extracurricular activities to make friends. But I swear to god half the conversations are me being nice and trying to make small talk, but the other person says something very brief in response and their body language says they don&#8217;t want to talk to me. If we are in a group they go 'umm anyways' roll their eyes and then talk to the other people in the group. I don&#8217;t understand what I&#8217;m doing wrong. I&#8217;m just trying to be nice. I struggle to make even a casual acquaintance or get anyone&#8217;s instagram. Why did you all lie about there being no mean people at university?</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Emma on trying to meet new people at a university society
+</div>
+</div>
+<div class="paragraph">
+<p>Some students seem to find friends easily, others make a huge effort and still struggle. Feeling lonely is one of the most common complaints from university students, but also one of the most difficult problems to solve due to the complexity of human nature. Some may read this chapter and think the advice is obvious, but questions on social media show that students are struggling at times with even basic interactions. Therefore, everything is explained as fully and clearly as possible. It may also be tempting to say that lonely students just need to toughen up and introduce themselves to a lot of people, but knowing a lot of people doesn&#8217;t necessarily mean having a lot of friends. Complex problems rarely have easy solutions.</p>
+</div>
+<div class="paragraph">
+<p>Difficulty finding friends can fall into a number of categories. The first category is a simple lack of opportunities to make friends. The second category is where the student has tried socialising with other students but has been rejected by them. The third category is where they have socialised with other students but while not rejected, haven&#8217;t been able to move beyond being simple acquaintances. The last category is where the student is too shy or anxious to even attempt to make friends and instead spends their time studying or on solitary activities like reading or playing video games. Although we discuss social anxiety briefly in this chapter, it is explored in more detail in the following chapter.</p>
+</div>
+<div class="ulist">
+<div class="title">Four categories of failing to find friends</div>
+<ul>
+<li>
+<p>Lack of opportunity.</p>
+</li>
+<li>
+<p>Rejected by peers.</p>
+</li>
+<li>
+<p>Unable to progress from acquaintances to friends.</p>
+</li>
+<li>
+<p>Too shy to socialise with others.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_university_is_a_different_environment">University is a different environment</h3>
+<div class="paragraph">
+<p>University is a very different environment to primary or secondary school. In school, it is common to spend all or most of the day together with the same group of people making it easier to develop friendships. At university, if you do have classes in common with a person, it might only be one or two. Also, the classes are often a very large lecture with little to no interaction with other students. It could also be a busy laboratory class where everyone is in a rush, which is also not a good environment for making friends. An added complication is that many students prefer to study at home and may only attend university for a small number of compulsory activities, meaning fewer opportunities for interactions.</p>
+</div>
+<div class="paragraph">
+<p>Prior to attending university, someone may have lived in the same town, or the same part of a larger city, their entire life and progressed through their schooling with largely the same group of people. Keeping friends was easy. Going to university may be the first time they have to mix with a nearly completely new group of people. If they have moved to a new city to attend university, but remained in the same country, they might know a few people superficially. For international students, they might not know anybody.</p>
+</div>
+<div class="paragraph">
+<p>In addition, universities typically have large undergraduate enrolments of tens of thousands of students. Much larger than any school, meaning that even if you casually meet another student, you might never run into them again. A common complaint from students is meeting new people at events in the first few weeks at university and then never seeing them again.</p>
+</div>
+<div class="paragraph">
+<p>Given many students are commuters and live a long way from university, this creates an additional barrier when social activities occur in the evening. Students may not be comfortable taking public transport home late at night, it may even be unsafe in some cities. Also, the time pressure on students means that although they want to join some of the available activities and maximise their chance of making friends, they either don&#8217;t have time or only have time for a few.</p>
+</div>
+<div class="paragraph">
+<p>Another possibility is that an individual may have already struggled to find friends while at high school due to shyness, anxiety, bullying or other factors, and were optimistic about finding friends easily at university. To their shock, finding friends was actually more difficult. Some students seemed to already have formed friend groups and aren&#8217;t interested in making additional friendships, others are just plain unfriendly.</p>
+</div>
+<div class="paragraph">
+<p>In general, university may be the first time you have tried to make friends as an adult. The other students might be busier or more judgemental than you are used to. Together, these factors create an environment where making friends is very difficult.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The structure of a large busy commuter university makes it difficult to find friends. Overcoming these structural barriers is a <strong>huge</strong> challenge.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_where_to_find_friends">Where to find friends</h3>
+<div class="paragraph">
+<p>Even those who have good social skills can sometimes struggle to make friends if the general environment at their university isn&#8217;t conducive to that. This can happen at large commuter universities where people disappear quickly after class to return home or go to a part-time job. In many cases, students choose not to even attend classes due to long and expensive commutes.</p>
+</div>
+<div class="paragraph">
+<p>One way of making friends is to find other students with mutual interests. Take a step back and consider what opportunities are available. These can include various clubs and sporting activities. It is also a good idea to think about what new interests you can develop that would facilitate making friends and can be continued during your life after university. Try to find social activities either within the university or in the community that meet regularly. Once a month isn&#8217;t anywhere near as good as once a week. Finding a social group or groups that you fit in with is an important first step towards making friends. If you are a quiet person who enjoys playing the violin, trying to make friends with the members of the university rugby team is unlikely to be a successful strategy.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Look for activities based on your interests that meet regularly. These can facilitate making friends.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Some students will dismiss an activity they are not already skilled at because they don&#8217;t want to look incompetent. However, many people start new activities at university. While there might be clubs that take the activity very seriously, others have a more social orientation and are happy to accept beginners. Similarly, don&#8217;t prematurely dismiss a whole category of activities like <em>sports</em> because you are not good at them. Not every sporting activity requires a high degree of athleticism. Investigate carefully all possible alternatives and don&#8217;t be afraid to try new things.</p>
+</div>
+<div class="paragraph">
+<p>Larger universities have a sizeable collection of clubs and societies, so there is no excuse for not finding ones that align with your interests. The question should never be "should i join a club or society?", but rather "which clubs or societies should I join?". Even if the clubs or societies don&#8217;t lead to close friendships, they can still provide a valuable chance to build a network of people. In addition, for those individuals with social anxiety, they can provide valuable opportunities to build confidence and social skills.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+University clubs and societies can provide a valuable opportunity for networking and building social skills even if they don&#8217;t lead to friendships.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Sometimes students focus their efforts on making friends solely at university. While this might seem like the logical approach, it is also worthwhile considering community activities. There are many community activities consisting mostly or solely of younger people. These can be a lasting source of friends if you plan to stay in the same city after graduation, when other students might leave to return to their hometowns or countries.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Don&#8217;t rely solely on university for a source of friends. Activities in the community can also provide good opportunities.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">Possible sources of new friends</div>
+<ul>
+<li>
+<p>University tutorials and workshops</p>
+</li>
+<li>
+<p>University clubs and societies</p>
+</li>
+<li>
+<p>Volunteer activities in the community</p>
+</li>
+<li>
+<p>Community fitness classes</p>
+</li>
+<li>
+<p>Part-time jobs</p>
+</li>
+<li>
+<p>Community sports and activities</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+Only going to classes and spending the rest of the time in your room at the halls of residence or at home is going to make finding friends very difficult.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Try attending a group or activity at least a few times to get a feel for it, and not dismiss it prematurely. Recognise that there is probably not going to be a perfect activity. On the other hand, if you really hate something, your initial judgement is probably accurate and there is no point wasting too much time on it. Better to spend that time elsewhere. Try not to just retreat to your room thinking "I&#8217;m never going to find a suitable activity", instead view it as part of a process of trying out different options. Being realistic, there are sometimes going to be activities that aren&#8217;t good options because people are cliquey or unfriendly, or even the membership numbers are just too small.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Try not to dismiss an activity too easily, but if it is unsuitable, don&#8217;t be afraid to try something else.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you are involved in extracurricular activities, but they are mainly solo or one-on-one activities such as individual music lessons, then look for additional activities that might be a source of friends. Remember the goal is to meet more people, so you need to look for activities where you can socialise with a group.</p>
+</div>
+<div class="paragraph">
+<p>If you are confident, you could start talking to people waiting for the same lecture or workshop who aren&#8217;t busy and who seem to share a common interest. For example, they may wear clothing related to a particular sports team or music group. They may carry certain goods, or have stickers on their laptop, bag, or phone case that identify them as sharing a common interest. In some ways, studying the same course is also a common interest. Don&#8217;t try and become friends straight away, that would be perceived as strange. Just make small talk the first few times you interact with them. Since they are in the same class, hopefully you will encounter them regularly.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_process_of_making_friends">The process of making friends</h3>
+<div class="paragraph">
+<p>Don&#8217;t expect to make instant friends. Some people will complain that they joined an activity, attended a couple of times, but haven&#8217;t made any friends yet. It can actually take a reasonable amount of time to form friendships. Many university students are quite introverted and are cautious about making new friends.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Forming friendships often takes time. Don&#8217;t expect to make friends quickly.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Due to the time it can take to make friends, it is important to get involved in various activities early in your university life. Sometime students reach their final year and then suddenly realise they haven&#8217;t made any friends. This creates a mad scramble to try to form friendships which almost never works. Starting to make friends in your first semester is important. Even if you don&#8217;t make any friends immediately, in subsequent semesters people will already be familiar with you, providing a base to build on.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+It can take time to make friends, so start early. Even if you don&#8217;t make friends at first, you are creating a foundation that can be built on.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_questionable_strategies_to_find_friends">Questionable strategies to find friends</h3>
+<div class="paragraph">
+<p>How often have you heard a statement like "It&#8217;s easy to meet people at university. When you see another group of students chatting just go up and introduce yourself"? This isn&#8217;t necessary the best strategy, going up to a group and saying "Hi my name is Lachlan" will stop the conversation and everyone will wonder who this guy Lachlan is who just appeared out of nowhere. The group might have been talking about something private, and they could be a bit annoyed that Lachlan barged into their conversation. They might even think Lachlan is weird and avoid him in future.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, just introducing yourself to random students in the campus bookstore or library is also likely to result in them feeling you are strange or perhaps trying to get them to join some sort of cult. Much of the time when someone just approaches you out of nowhere, they are trying to get you to join a religious group, sell you something, or involve you in something you aren&#8217;t interested in.</p>
+</div>
+<div class="paragraph">
+<p>Equally awkward are lecturers' misguided attempts at facilitating friendships among students, "Some students feel lonely and have difficulty making friends. I want you to turn to the person next to you and introduce yourself and give them your contact details. Now you&#8217;ve made your first friend!". It may be that the person sitting next to you is friendly enough, but the interaction is awkward and is unlikely to lead to any new friendships. Judging by the fact that they suggested such an approach, the lecturer also lacks expertise at making friends.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_are_you_accepted_by_the_group">Are you accepted by the group?</h3>
+<div class="paragraph">
+<p>Suppose you&#8217;ve joined various clubs and societies or other activities and are turning up regularly. How do you know if people fully accept you or just tolerate you? If they fully accept you there are a number of signs to look for.</p>
+</div>
+<div class="ulist">
+<div class="title">Signs you are fully accepted</div>
+<ul>
+<li>
+<p>Strike up a conversation with you.</p>
+</li>
+<li>
+<p>Respond positively to your attempts at conversation.</p>
+</li>
+<li>
+<p>Respond to instant messages and other electronic communications.</p>
+</li>
+<li>
+<p>Add you to their social networking pages.</p>
+</li>
+<li>
+<p>Ask you to join various group or individual activities.</p>
+</li>
+<li>
+<p>Ask for your contact information.</p>
+</li>
+<li>
+<p>Give you their contact information.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If after some time members of the group don&#8217;t do any of these things, it could be a sign they haven&#8217;t fully accepted you. What period of time is reasonable depends on the situation and how often you meet the members. If your goal is to make friends but the group activities aren&#8217;t that enjoyable and the members of the group aren&#8217;t that accepting, then it may be time to consider other activities. In addition, consider if there is anything you might have done differently to help facilitate making friends, or whether you did anything that discouraged other members from being friendly.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_do_other_students_reject_you">Why do other students reject you?</h3>
+<div class="paragraph">
+<p>Sometimes despite attempts at being friendly to other students, they may reject your attempts. This may well be due to factors beyond your control. For example, the other student might be busy, not want to make friends, or they may not like you for some superficial reason. However, sometimes you might unintentionally do something which causes the students to reject you, such as interrupting a conversation or otherwise not paying attention to social cues.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_friendship_is_a_choice">Friendship is a choice</h3>
+<div class="paragraph">
+<p>Alyssa lives in university run student accommodation. There are five bedrooms that share a common living area and bathroom. The four other residents went out to the pub and didn&#8217;t invite her. Alyssa was angry about not being invited and planned to confront them about it. While the other students do seem a bit mean not inviting her, it isn&#8217;t possible to force people to be friends or to invite someone to the pub. Angrily confronting them won&#8217;t make them like Alyssa and will ultimately create a difficult environment for the remainder of the year during which they still need to share a living space. It&#8217;s possible the other residents might become friendlier to Alyssa over time, but Alyssa should focus on developing other friendships rather than dwelling on the perceived rejection.</p>
+</div>
+<div class="paragraph">
+<p>At the end of the day, friendship is a choice. We can&#8217;t force those who aren&#8217;t really interested to be friends with us. Likewise, just because someone wants to be friends with us doesn&#8217;t mean we have to.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+Friendship is a choice. Others aren&#8217;t obligated to be friends with us, and we aren&#8217;t obligated to be friends with others.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Sometimes it is better to focus on making new friends rather than waste energy on friendships that aren&#8217;t going anywhere or are fading away.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_im_happy_on_my_own_i_dont_want_to_make_friends">I&#8217;m happy on my own. I don&#8217;t want to make friends.</h3>
+<div class="paragraph">
+<p>Some people may be happiest on their own and don&#8217;t want to make new friends. There is nothing wrong with that if that is how they really feel. Yet, they should be careful they are really being honest with themselves and that it is not just an excuse to avoid uncomfortable social situations.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_im_not_changing_my_style">I&#8217;m not changing my style</h3>
+<div class="paragraph">
+<p>"I shouldn&#8217;t have to change my style just to fit in, people need to accept me for who I am" is another common saying. In reality, groups tend to adopt certain norms around behaviour, dress, and other aspects. If you choose to violate these norms, then the group may not accept you. If you adopt the norms of a certain subculture, then you can try making friends with other members of that subculture. But if your personal style and behaviour is so out there and removed from other groups that are available, being realistic, that could add to difficulties in making friends.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_people_make_snap_judgements_based_on_superficial_characteristics">People make snap judgements based on superficial characteristics</h3>
+<div class="paragraph">
+<p>It&#8217;s been shown that humans make snap judgements based on a variety of characteristics such as facial shape, facial expression, clothing, standard of grooming, posture, gait etc. Unfortunately, this can mean within a second of meeting someone they may have already decided that you are unlikeable, untrustworthy, or worse. This makes it very difficult to form a friendship. While it&#8217;s true that an initial judgement may be overridden as additional information comes to light, this may be difficult as the person in question simply avoids further interactions.</p>
+</div>
+<div class="paragraph">
+<p>Some of the characteristics that are used to make initial judgements can&#8217;t be controlled, so there is no point worrying about them. Instead, focus on what can be controlled, and how you can influence the initial impression you want to make. This could involve changing your clothing, hairstyle, and other elements of your personal presentation.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+People make snap judgements in the first second of meeting. Think about how you want to present yourself and influence that judgement.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_making_small_talk_and_conversation">Making small talk and conversation</h3>
+<div class="paragraph">
+<p>Remember, each country is slightly different when it comes to small talk. If you read an American book on small talk, some of the suggestions may not translate that well to other English speaking countries. Instead, you might come across as somewhat fake.</p>
+</div>
+<div class="sect3">
+<h4 id="_what_makes_for_good_casual_conversation">What makes for good casual conversation</h4>
+<div class="paragraph">
+<p>Sometimes people have the tendency to go on and on about topics the listener has no knowledge or interest in. The listener can feel annoyed at not having a chance to speak and also frustrated about listening to an extended talk on some subject they don&#8217;t care about. Even if the listener shares an interest in a subject, repeatedly talking about the same topic every time you see them, may still see the listener getting bored.</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s important in conversation not to be critical of the other person or to police their behaviour. Another thing to avoid is asking questions about, or commenting on, anything that is too personal. If in doubt, it is better to avoid the topic.</p>
+</div>
+<div class="ulist">
+<div class="title">Things NOT TO DO in casual conversation</div>
+<ul>
+<li>
+<p>Hog the conversation.</p>
+</li>
+<li>
+<p>Talk too much about your favourite topic (especially if the interest isn&#8217;t shared).</p>
+</li>
+<li>
+<p>Be critical or judgemental of the other person either directly or indirectly.</p>
+</li>
+<li>
+<p>Talk about controversial topics like politics or religion.</p>
+</li>
+<li>
+<p>Interrupt the other person.</p>
+</li>
+<li>
+<p>Ask questions that are too personal or reveal too much personal information.</p>
+</li>
+<li>
+<p>Be arrogant or too much of a know-it-all.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Jack was an undergraduate psychology student and prided himself on his knowledge of the <em>deeper workings of the mind</em>. He was mystified though when people responded defensively to his observations about their psychological makeup, and what they needed to improve. He expected his remarks to <em>spark further curiousity</em> but that didn&#8217;t turn out to be the case. It&#8217;s obvious that such personal comments and unsolicited criticism are not appreciated by most people. In addition, Jack is not qualified to be making such diagnoses. Whether a student is an aspiring Psychologist or not, such remarks are rarely appropriate.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Ethan: How did you go on the economics assignment?</p>
+</div>
+<div class="paragraph">
+<p>Connor: Err, well I failed, it&#8217;s partially my own fault I was busy with other stuff and left it to the last minute.</p>
+</div>
+<div class="paragraph">
+<p>Ethan: Yeah it does sound like it was your fault, you should&#8217;ve started working on it earlier.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Ethan alienating another student by being unsympathetic
+</div>
+</div>
+<div class="paragraph">
+<p>Ethan&#8217;s criticism and lack of sympathy for Connor failing the assignment is not likely to win him any friends. Connor is going to walk away from the conversation with a negative impression of Ethan.</p>
+</div>
+<div class="ulist">
+<div class="title">Things TO DO in casual conversation</div>
+<ul>
+<li>
+<p>Ask open-ended questions.</p>
+</li>
+<li>
+<p>Find topics of common interest.</p>
+</li>
+<li>
+<p>Trade information.</p>
+</li>
+<li>
+<p>Ask follow-up questions.</p>
+</li>
+<li>
+<p>Use non-verbal cues like nodding your head in agreement.</p>
+</li>
+<li>
+<p>Be sympathetic about any problems a person is experiencing.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If the person responds with perfunctory answers, it&#8217;s a sign they probably aren&#8217;t interested in conversation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_be_careful_about_humour_sarcasm_and_banter">Be careful about humour, sarcasm, and banter</h4>
+<div class="paragraph">
+<p>Paradoxically, humour can quickly repel people. The reason is not everyone shares the same sense of humour. Furthermore, in multicultural situations, a joke that might be acceptable in one culture is not acceptable in another. For this reason stick to mild jokes and be especially cautious in multicultural situations.</p>
+</div>
+<div class="paragraph">
+<p>Exchanging teasing remarks (banter) is popular in some countries, and while not done with bad intent, it is still risky behaviour because what one person considers a relatively mild comment, may still offend another person. Also, there is the tendency for the banter to escalate over time. If your goal is to make and keep friends, then it is best to avoid teasing even if other people engage in it. Even for those people that might enjoy some banter at first, it can become tiresome over time.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Since your goal is to make friends, it is better to be very cautious when it comes to humour, sarcasm, and teasing. That doesn&#8217;t mean humour needs to be completely avoided, but caution is needed.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_starting_conversations">Starting conversations</h4>
+<div class="paragraph">
+<p>In general, look for a common interest and then start a conversation based on that such as asking a question or making some general comment. For university students, obvious topics include their course, clubs, societies, or other aspects of university life. But you could make reference to things like the brand of phone or tablet the person is using, items of clothing that signal a particular interest, or anything else that catches your eye. For instance, someone might be wearing a t-shirt from a particular artist&#8217;s or band&#8217;s concert tour.</p>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t overdo it on the first conversation. If they seem friendly talk to them again next time you see them. Friendliness can be assessed from eye contact, body language, and verbal cues. If the person is speaking in a friendly manner and giving extended responses, then that is a good sign. Short and unenthusiastic answers are probably a signal that a person isn&#8217;t interested in talking further.</p>
+</div>
+<div class="paragraph">
+<p>Eye rolling, disinterested expressions, disapproving looks, making faces, eyes looking elsewhere, are all signs that the other person is not interested in the conversation. Don&#8217;t get hung up on some sort of FBI or CIA body language secrets type stuff you might have seen on social media, but learn to trust your instincts about clusters of body language signs that signal disinterest.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Look for common interests as a basis for starting a conversation. Use body language and other cues to judge how interested the person is in continuing the conversation. Don&#8217;t talk for too long and make the person sick of you.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t expect everyone to be even superficially friendly. Expect many attempts to be rejected. The exact percentage can vary depending on the context. Some people might not want to be rude, and will engage in conversation but are obviously disinterested or putting in little effort. Other people will give you weird looks and not even make a minimal effort. Sometimes people in the same class, or living in the same halls of residence, may not even respond to greetings when you see them on campus. Try not to feel demoralised by these rejections as they are part of life. People are unfriendly for a variety of reasons that are beyond your control.</p>
+</div>
+<div class="paragraph">
+<p>Starting conversations is a game of odds, the more attempts you make, the more likely you are to be successful. On the other hand, this doesn&#8217;t mean trying to start all sorts of random conversations where it isn&#8217;t really appropriate. Trying to talk with people in the wrong place or at the wrong time is a guaranteed route to a lot of demoralising failures. For example, trying to start up a conversation with a random person who is busy studying in the library is certain to annoy them.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_entering_a_group_conversation">Entering a group conversation</h4>
+<div class="paragraph">
+<p>Be cautious about entering a group conversation. If you don&#8217;t know anybody there, it could well be perceived as intrusive to just join. Also, it could be the topic was one they didn&#8217;t feel comfortable discussing with a stranger. A lot depends on the environment and other factors which requires careful judgement.</p>
+</div>
+<div class="paragraph">
+<p>If, however, you know one or more people in the group and overhear a conversation that seems like it would be fine to join (like a discussion of sports or an upcoming assignment), you could try and join the conversation, "Are you talking about the next assignment? I&#8217;m really struggling with that. I did fine on the first part, but the second part was a lot trickier". When joining a conversation, you don&#8217;t necessarily want to alter the topic as that could annoy the participants, instead you have some information that you can offer, as well as hopefully get something in return. If the body language of the group seems receptive to your comment, you can move closer to the group.</p>
+</div>
+<div class="paragraph">
+<p>Continue to ask questions and make comments about the topic while assessing the interest of the group members in your contribution. If you get the impression that you&#8217;ve overstayed your welcome based on body language (turning their bodies away, looking away) and verbal cues, make an excuse and leave.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_is_the_conversation_going_well">Is the conversation going well?</h4>
+<div class="paragraph">
+<p>Sometimes your attempt at being friendly will be accepted, and sometimes it will be rejected. That&#8217;s just the way it is. No matter how nice a person you are, some people just aren&#8217;t interested in making new friends (for whatever reason). Often times, the reason a person might not want to talk has nothing to do with you. They might be feeling tired, they might have to leave shortly, they may be preoccupied with other issues, they may even not like talking with new people. It could be a lot of reasons. Be prepared for rejection and don&#8217;t take it personally. Read social cues carefully, don&#8217;t persist in conversation attempts if the person or group you are trying to talk with is disinterested.</p>
+</div>
+<div class="paragraph">
+<p>How well a conversation is going can be assessed based on a variety of cues such as body language, verbal cues, facial expressions, and eye contact. Positive body language involves the other participants in the conversation orienting their body towards you, smiling and having an open expression on their face. Negative body language includes turning away, looking like they are preparing to leave, frowning, or having a cold expression on their face. A group may orient themselves so you are excluded from the circle.</p>
+</div>
+<div class="paragraph">
+<p>When it comes to verbal cues look for friendly lengthy responses as a positive sign. Short terse responses or even a non responses are a negative sign.</p>
+</div>
+<div class="paragraph">
+<p>With regard to eye contact, if the other person makes frequent eye contact, nods their head in agreement and smiles, then that is a good sign. If they mostly look away, don&#8217;t smile, and generally have a bored expression or even give you looks of annoyance or disapproval, then that is obviously a bad sign.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+You don&#8217;t need to be an expert on body language to detect that someone is having a negative reaction. Large clusters of verbal and non-verbal cues will make it obvious.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_exiting_conversations">Exiting conversations</h4>
+<div class="paragraph">
+<p>Not every conversation will go well. It&#8217;s natural that for whatever reason, other people might not be receptive to your attempts at conversation. Don&#8217;t get angry or annoyed that your attempt at conversation has been rebuffed, just make a brief comment such as "Well, I&#8217;ve got to go", or "I&#8217;ll see you later" and then leave. Leaving without saying anything might seem abrupt or rude, but what you say doesn&#8217;t really matter that much because the individual or group that you were talking to isn&#8217;t that interested. If necessary, you can use your phone as a prop to show that something else has got your attention.</p>
+</div>
+<div class="paragraph">
+<p>In the situation where the conversation is going well, but you want to leave, wait for a brief pause then give an excuse for leaving such as "I better go, I&#8217;ve got an assignment to work on", "sorry I have to the gym" etc. That way it doesn&#8217;t seem like you are leaving abruptly or that you are bored with the conversation. Then you could say something like "see you later" or "bye" depending on the situation as you walk away.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conversation_starters_with_other_students">Conversation starters with other students</h4>
+<div class="paragraph">
+<p>Some simple conversation starters that you might use include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>What did you do in the weekend?</p>
+</li>
+<li>
+<p>What classes are you taking this semester?</p>
+</li>
+<li>
+<p>Do you go to the university gym? Is it crowded? I was thinking of joining.</p>
+</li>
+<li>
+<p>Have you started the assignment for the Psychology 101 class yet?</p>
+</li>
+<li>
+<p>I&#8217;m doing organic chemistry but it&#8217;s so tough. Do you have any advice?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Remember, these are just simple suggestions and you can think of others. Possible topics depend on the individual and the situation, but some ideas include: streaming shows, movies, video games, music, clothes, fashion, makeup, problems with courses, exams, lecturers, "majors", "minors", career goals, sports, favourite content creators (youtubers / tiktokers), cars, weekend activities,  other hobbies and interests.</p>
+</div>
+<div class="paragraph">
+<p>If you are not confident at making conversation, think of some conversation starters in advance.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_exchanging_contact_information">Exchanging contact information</h4>
+<div class="paragraph">
+<p>Normally you should have talked to a person a few times and built up a rapport before asking for their contact details. Asking a random person, or a person you just met, for their contact or social media details could be perceived as a bit odd depending on the situation. Even if they supply them, in the vast majority of cases, they will likely ignore attempts at contact. It is situational though, some people might be eager to make friends and offer you their contact details during the first meeting.</p>
+</div>
+<div class="paragraph">
+<p>When you ask for the details have a plausible reason as to why you need the contact details. Since you&#8217;ve already spent some time talking with that person, you should have a number of good reasons. Lead with the reason and see if they seem interested, before actually asking for any details. If they don&#8217;t seem interested, you can avoid the request for contact details being rejected which could be a bit awkward. Generally speaking, if the person doesn&#8217;t seem interested, or looks nervous or uncomfortable, then you know not to pursue it further.</p>
+</div>
+<div class="paragraph">
+<p>When you do make contact, make sure you stick to your initial reason otherwise, it will seem like you weren&#8217;t being honest in your communication.</p>
+</div>
+<div class="quoteblock">
+<div class="title">Asking for contact details. Positive and negative outcomes.</div>
+<blockquote>
+<div class="paragraph">
+<p>Riley: "Oh you like basketball too we should play some time?"
+Max:  "That&#8217;s a good idea"
+Riley: "How can I contact you?"</p>
+</div>
+<div class="paragraph">
+<p>Riley: "Oh you like basketball too we should play some time?"
+Max: "Well I&#8217;m kind of busy these days &#8230;&#8203;.."
+Riley: "Ah, OK well nevermind"</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_guidelines_for_electronic_communication">Guidelines for electronic communication</h3>
+<div class="paragraph">
+<p>Electronic communications are a useful way to contact people you may have met in class or at a university club or society. Nevertheless, some caution is advisable, and there are a number of things to keep in mind.</p>
+</div>
+<div class="paragraph">
+<p>Firstly, follow the two message rule. If you send someone more than two electronic communications and don&#8217;t get a response, then don&#8217;t send anymore communications because that person is obviously not interested in communicating at this stage. Some people even go to extremes if they don&#8217;t get a reply, such as posting on public forums trying to track down that person. Please be realistic, if someone doesn&#8217;t reply they are busy or not interested in communicating.</p>
+</div>
+<div class="paragraph">
+<p>Secondly, avoid <em>cold calling</em>. This means don&#8217;t contact an individual unless they have given you their contact details personally. Getting messages or calls from people you don&#8217;t know (or haven&#8217;t given your details to) can be perceived as annoying or even creepy depending on the scenario. If you obtained their details from being a member of the same club, or even being part of the same group project, then be careful how those details are used. As a general rule, only use them for the purposes of the club or group project, at least until you&#8217;ve gotten to know them better.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Use the two message rule. If you send someone more than two electronic communications and don&#8217;t get a response, then don&#8217;t send anymore because that person is obviously not interested in communicating.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_social_media_is_a_less_preferable_tool_to_make_initial_contact_with_people">Social media is a less preferable tool to make initial contact with people</h3>
+<div class="paragraph">
+<p>Lonely students often try to use social media as a tool to introduce themselves to new people. In many cases, this won&#8217;t be successful as not everyone is compatible, and it is hard to develop an impression of someone online. Also, there is the risk that the person you are talking to is not who they are portraying themselves to be. This is especially the case of relatively open online platforms which anyone can join. Also it isn&#8217;t a particularly efficient way, since you might only meet one person at a time, whereas with group activities you get to meet a lot of people.</p>
+</div>
+<div class="paragraph">
+<p>In contrast, social media can be useful for maintaining existing friendships that you have established in real life. You can use social media to make initial contact with people if you want, but be cautious about who you are meeting. Also think carefully about whether it is a worthwhile strategy.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_online_friends_arent_a_substitute_for_real_friends">Online friends aren&#8217;t a substitute for real friends</h3>
+<div class="paragraph">
+<p>It&#8217;s not uncommon for students who are lonely to spend a huge amount of time online and have an extensive network of online <em>friends</em> who they have met through online gaming or other activities. While online games can be fun, online friends aren&#8217;t a substitute for real life friendships. Many of the <em>online friends</em> are spread around the world so aren&#8217;t useful for doing in-person activities like sports, dining, etc.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Online friends aren&#8217;t a substitute for real life friendships.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">Problems with online friendships</div>
+<ul>
+<li>
+<p>Absorb time and energy that can be spent on real life friendships and other more productive pursuits.</p>
+</li>
+<li>
+<p>Typically don&#8217;t last that long.</p>
+</li>
+<li>
+<p>Aren&#8217;t useful if you need help, like someone to drive you to the airport or help you move apartments.</p>
+</li>
+<li>
+<p>The person could be dishonest. You have less information to make that determination.</p>
+</li>
+<li>
+<p>Don&#8217;t give an opportunity to develop in-person social skills you need in the workplace and for navigating complex real life relationships.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_casual_sports_are_a_good_way_to_make_friends">Casual sports are a good way to make friends</h3>
+<div class="paragraph">
+<p>While some sports clubs have a competitive orientation, there are others where the atmosphere is less serious. Even those who don&#8217;t like most sports or aren&#8217;t athletic can often find an activity that suits them. E-sports are also growing in popularity. Many universities have esports societies, and some university have special esports facilities.</p>
+</div>
+<div class="paragraph">
+<p>Sometimes in sports, obnoxious comments and insults are considered normal, but when joining sports for fun and to make friends, it is essential to show good sportsmanship. Remember your goal is to make friends and build a network.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+When trying to make friends, avoid insults or sarcasm even if others use it.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>It goes without saying that you shouldn&#8217;t cheat. Also, if you are playing for social purposes, it isn&#8217;t worth arguing about whether the ball was in or out, for example. If the person you are playing with cheats or fouls, then avoid them in future as they are likely of bad character. There are some other behaviours that are best avoided when playing sports for social purposes. These include being overly competitive or becoming angry or emotional when you lose. Similarly, leave the over the top victory celebrations to professional athletes who&#8217;ve just won a major sporting event. Lack of sportsmanship and emotional outbursts can quickly ruin your reputation.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Don&#8217;t overreact in victory or defeat when playing social sports.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Leave the refereeing up to the referee if there is one. If there is no referee, don&#8217;t make a big deal over minor rule violations.</p>
+</div>
+<div class="paragraph">
+<p>Even if you notice some errors in another players game, don&#8217;t start giving them pointers unless they specifically ask for them, and you really are a lot better. Unsolicited coaching advice can be perceived as arrogant and annoying. At the end of the game acknowledge the other player with a comment like "good game" or some other sort of complement.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_to_deal_with_minor_arguments_or_misunderstandings">How to deal with minor arguments or misunderstandings</h3>
+<div class="paragraph">
+<p>If the other individual has a pattern of overreacting and excessively blaming others, then over time you might want to invest less in the friendship and allocate your time elsewhere. It doesn&#8217;t mean you need to cut that person off, they might become more mature over time, but investing your time elsewhere may be more rewarding.</p>
+</div>
+<div class="olist arabic">
+<div class="title">A strategy for dealing with misunderstandings</div>
+<ol class="arabic">
+<li>
+<p>Try to stay cool. Getting mad won&#8217;t help the situation.</p>
+</li>
+<li>
+<p>Let the other person speak without interrupting.</p>
+</li>
+<li>
+<p>Let them know that you understood what they are saying using phrases like "I hear what you&#8217;re saying", or "It sounds like you are mad about".</p>
+</li>
+<li>
+<p>If necessary, ask questions to clarify the situation.</p>
+</li>
+<li>
+<p>Explain your perspective. It may well be that is a simple misunderstanding that is easily resolved or something you did unintentionally. This could help reduce the other person&#8217;s anger.</p>
+</li>
+<li>
+<p>Give a brief apology or semi-apology if you are at fault. Sometimes a semi-apology can help defuse the situation.</p>
+</li>
+<li>
+<p>Find common ground or agree on a compromise. Sometimes you might have to agree to disagree.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Obviously, different types of arguments need to be dealt with in a slightly different manner. For example, a disagreement over a group project is different from one in shared accommodation. If you believe someone you know has done something wrong, try not to react angrily in the spur of the moment as it could be counterproductive in the long run. Ideally, actual arguments will be few and far between by being considerate of others.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fair_weather_friends">Fair-weather friends</h3>
+<div class="paragraph">
+<p>Sometimes students have an unrealistic view on what friendship is. Many friendships are going to be somewhat transient and superficial in nature. That is just the way friendships are.</p>
+</div>
+<div class="paragraph">
+<p>People seek a high proportion of positive interactions and fun experiences in a friendship. This involves partaking in activities like sports, games, dining out, going to the pub, and attending events. Conversely, people don&#8217;t want to deal with relationships that drain their energy, such as with those who have too much personal baggage. If a student is continuously in a bad mood, or has other psychological issues, it could be hard for them to form new social connections. In contrast, those who are perceived as positive, independent, and competent, are more likely to find it easier to make new friends.</p>
+</div>
+<div class="paragraph">
+<p>Students can sometimes expect their friends to assist them with a large number of personal issues, and then complain when no help is forthcoming. But such expectations are often not realistic. Their friends are busy with their studies, part-time job, and their own problems. They simply may not have the time or emotional reserves to take on someone else&#8217;s serious issues. They often don&#8217;t have the skill set either, some things are best left to psychologists and other professionals. Be cautious about placing these demands on your friends, maybe they will try and help, but they could also disappear. In short, if someone is too needy, a friendship may not endure.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Don&#8217;t have unrealistic expectations about friendship and don&#8217;t expect relatively new friends to solve your serious problems.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The term fair-weather friend is used to refer to a friend who is present during good times, but then quickly disappears when challenging situations occur. Fair weather friends are the most common type of friend. Don&#8217;t lament that your friendships aren&#8217;t deeper, instead be thankful even for fair-weather friends, as some people have no friends at all.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Some people may lament their lack of deep friendships, but even fair-weather friendships can still be rewarding.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In society people are looking to maximise their benefits and minimise their costs both in terms of time and emotional energy. For this reason, they will avoid anyone that is too clingy or who brings too much drama. Over time, the bonds of friendship might become stronger, allowing you to rely on them more, in the short term be realistic.</p>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t take this mean that you too should only be a fair-weather friend. You are free to be whatever kind of friend you want. Maybe you are happy to go out of your way to assist an associate. Try not to build up too much of an expectation that they will reciprocate on any assistance you&#8217;ve given them.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conclusion">Conclusion</h3>
+<div class="paragraph">
+<p>Loneliness and difficulty making friends can have many causes, but the structure of the typical commuter university can make things incredibly hard. Overcoming these barriers may require substantial effort. As a starting point, look for low-pressure situations where you can meet people repeatedly and get to know them. One good example would be sports activities that you can enjoy throughout your life, such as racket sports, but there are many others. Making friends can take time, which makes it important to start trying to make friends early. Pay attention to your communication style in order not to alienate any potential friends. Remember that friendship is a choice, you can&#8217;t force someone to become friends with you. A person can do everything right but still not find friends.</p>
+</div>
+<div class="paragraph">
+<p>Although some people try to make friends primarily through social media, it is probably not the best way, even if it is sometimes successful. Take advantage of opportunities offered by university to meet people in person. Certainly, purely online friendships are no substitute for real-life friendships.</p>
+</div>
+</div>
+<div class="sect2">
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text"></div>
+</div>
+</body>
+</html>
